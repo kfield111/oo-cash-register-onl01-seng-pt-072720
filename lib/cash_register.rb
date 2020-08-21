@@ -44,7 +44,6 @@ end
 def void_last_transaction
   @@all_items.pop
   @total = total - self.price
-  @@all_items
 end
 
 end
