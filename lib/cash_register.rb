@@ -44,6 +44,7 @@ end
 def void_last_transaction
     @total = total - self.price
     @@all_items.pop
+    binding.pry
     if @@all_items == []
       @total = 0.0
     end
