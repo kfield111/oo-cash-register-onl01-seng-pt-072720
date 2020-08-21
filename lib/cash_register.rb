@@ -42,7 +42,7 @@ def items
 end
 
 def void_last_transaction
-  @@all_items.pop
+  @quantity.times do @@all_items.pop
   if @@all_items == []
     @total = 0.0
   else
