@@ -47,5 +47,6 @@ if @@all_items == []
 else
   @total -= price
 end
+end
 
 end
