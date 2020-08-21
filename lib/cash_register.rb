@@ -44,6 +44,9 @@ end
 def void_last_transaction
     @total = total - self.price
     @@all_items.pop
+    if @@all_items == []
+      @total = 0.0
+    end
 end
 
 end
