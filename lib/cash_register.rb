@@ -42,7 +42,6 @@ def items
 end
 
 def void_last_transaction
-  @@all_items.pop
   @total = total - price
 end
 
