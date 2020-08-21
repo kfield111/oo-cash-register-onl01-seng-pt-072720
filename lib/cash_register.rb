@@ -42,7 +42,10 @@ def items
 end
 
 def void_last_transaction
-@total = 0.0
+if @@all_items == []
+  @total = 0.0
+else
+  @total -= price
 end
 
 end
