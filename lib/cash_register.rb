@@ -43,6 +43,7 @@ end
 
 def void_last_transaction
   @quantity.times do @@all_items.pop
+  end
   if @@all_items == []
     @total = 0.0
   else
