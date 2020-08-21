@@ -42,8 +42,9 @@ def items
 end
 
 def void_last_transaction
-    @total = total - self.price
-    @@all_items.pop
+  @@all_items.pop
+  @total = total - self.price
+  @@all_items
 end
 
 end
